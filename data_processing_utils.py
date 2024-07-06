@@ -122,7 +122,7 @@ def plot_missing_values(df):
         
         # Plotting missing value matrix
         axs[1].set_title("Matrix of Missing Values")
-        msno.matrix(df, ax=axs[1])
+        msno.matrix(df,sparkline=False, ax=axs[1])
         
         plt.tight_layout(rect=[0, 0, 1, 0.95])  # Adjust layout to prevent overlapping
         plt.show()
